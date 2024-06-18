@@ -1,4 +1,4 @@
-# My Sql
+# MySql
 
 ## Remove ONLY_FULL_GROUP_BY (Sql mode)
 
