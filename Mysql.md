@@ -16,18 +16,3 @@
 ```
 
 
-
-
-## Solution 1: Remove ONLY_FULL_GROUP_BY from mysql console
-
-```
-SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
-```
-
-Be aware that this setting is NOT persistent across restarts, then use
-
-```
-SET PERSIST sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
-```
-
-
